@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <h1>Calculator</h1>
+    </div>
+    <div class="text1">Калькуля́тор (лат. calculātor «счётчик») — электронное вычислительное устройство для выполнения операций над числами или алгебраическими формулами.
+
+        Калькулятор заменил механические вычислительные устройства, такие, как абаки, счёты, логарифмические линейки, механические или электромеханические арифмометры, а также математические таблицы (прежде всего — таблицы логарифмов).
+        
+        В зависимости от возможностей и целевой сферы применения калькуляторы делятся на простейшие, бухгалтерские, инженерные (научные), финансовые. В отдельные классы обычно выделяют программируемые калькуляторы, дающие возможность выполнения сложных вычислений по предварительно заложенной программе, а также графические — поддерживающие построение и отображение графиков. Специализированные калькуляторы предназначены для выполнения вычислений в достаточно узкой сфере (финансовые, строительные и т. п.)
+        
+        По исполнению калькуляторы могут быть настольными или компактными (карманными). Отдельные модели имеют интерфейсы для подключения персонального компьютера, печатающего устройства, внешнего модуля памяти или иных внешних устройств. Современные персональные компьютеры, сотовые телефоны, КПК и даже наручные часы могут иметь программы, выполняющие функции калькулятора.
+        
+        Термином "калькулятор" также называются специализированные программы, встраиваемые в веб-сайты (например, "калькулятор калорий", "калькулятор размеров одежды" и пр.) или в бытовую технику (например, простой медицинский калькулятор может встраиваться в спортивный тренажёр).</div>
+    <hr class="hr1" size="5">
+    <div class="calc">
+        <img src="zalupa.png" width="500px">
+    </div>
+    <div class="result">
+        <p id="result"></p>
+    </div>
+    <div class="num_1">
+        <input id="num1" type="number" placeholder="Первое число">
+    </div><br>
+    <div class="operators" id="operator_btns">
+        <button class="button__op" id="plus" onclick="op='+'">+</button>
+        <button class="button__op" id="minus" onclick="op='-'">-</button>
+        <button class="button__op" id="times" onclick="op='*'">x</button>
+        <button class="button__op" id="divide" onclick="op='/'">:</button>
+    </div><br>
+    <div class="num_2">
+        <input id="num2" type="number" placeholder="Второе число">
+    </div><br>
+    <div class="ravno">
+        <button onclick="func()">=</button>
+    </div>
+    <div class="result">
+        <p id="result"></p>
+    </div>
+    <hr class="hr2" size="5">
+    <div class="info">
+        <div class="pravo">All rights reserved</div>
+        <div class="year">2024</div>
+    </div>
+</body>
+</html>
